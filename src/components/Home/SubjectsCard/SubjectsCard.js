@@ -1,19 +1,19 @@
 import React from "react";
+import "./SubjectsCard.css";
 
 const SubjectsCard = ({ subject }) => {
   return (
     <div className="col-md-4 mt-3 d-flex justify-content-center  ">
-      <div style={{ width: "60% ", height: "50%" }} class="card mb-3">
-        <img class="card-img-top" src={subject.image} alt="" />
+      <div style={{ width: "60% " }} class="card mb-3">
+        <img
+          style={{ maxWidth: 400, height: 150 }}
+          class="card-img-top"
+          src={subject.image}
+          alt=""
+        />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 mins ago</small>
-          </p>
+          <h5 class="card-title">{subject.name}</h5>
+          <p class="card-text">Starts from {subject.description}$</p>
         </div>
       </div>
     </div>

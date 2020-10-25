@@ -1,5 +1,6 @@
 import React from "react";
 import Features from "../Features/Features";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import NavBarRB from "../NavBarRB/NavBarRB";
 import Subjects from "../Subjects/Subjects";
@@ -13,6 +14,7 @@ const Home = () => {
       <WorkingSteps></WorkingSteps>
       <Features></Features>
       <Subjects></Subjects>
+      <Footer></Footer>
     </div>
   );
 };
